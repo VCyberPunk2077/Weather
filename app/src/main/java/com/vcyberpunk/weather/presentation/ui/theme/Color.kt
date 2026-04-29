@@ -1,4 +1,4 @@
-package com.vcyberpunk.weather.ui.theme
+package com.vcyberpunk.weather.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
