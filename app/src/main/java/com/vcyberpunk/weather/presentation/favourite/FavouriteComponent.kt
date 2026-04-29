@@ -1,0 +1,3 @@
+package com.vcyberpunk.weather.presentation.favourite
+
+interface FavouriteComponent
