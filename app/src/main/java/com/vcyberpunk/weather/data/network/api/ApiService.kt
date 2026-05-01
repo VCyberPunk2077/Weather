@@ -1,7 +1,7 @@
 package com.vcyberpunk.weather.data.network.api
 
 import com.vcyberpunk.weather.data.network.dto.CityDto
-import com.vcyberpunk.weather.data.network.dto.WeatherCurrentDto
+import com.vcyberpunk.weather.data.network.dto.WeatherDto
 import com.vcyberpunk.weather.data.network.dto.WeatherForecastDto
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -11,7 +11,7 @@ interface ApiService {
     @GET("current.json")
     suspend fun loadCurrentWeather(
         @Query("q") query: String
-    ): WeatherCurrentDto
+    ): WeatherDto
 
     @GET("forecast.json")
     suspend fun loadForecast(
