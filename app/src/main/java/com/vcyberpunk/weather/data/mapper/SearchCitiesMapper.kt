@@ -10,7 +10,7 @@ private fun CityDto.toEntity(): City = City(
 )
 
 fun List<CityDto>.toListEntity(): List<City> {
-    this.forEach {
+    return this.map {
         it.toEntity()
     }
 }

@@ -1,7 +1,6 @@
 package com.vcyberpunk.weather.data.mapper
 
 import android.icu.util.Calendar
-import com.vcyberpunk.weather.data.network.dto.WeatherCurrentDto
 import com.vcyberpunk.weather.data.network.dto.WeatherDto
 import com.vcyberpunk.weather.data.network.dto.WeatherForecastDto
 import com.vcyberpunk.weather.domain.entity.Forecast
