@@ -9,7 +9,7 @@ import com.vcyberpunk.weather.presentation.details.DetailsStore.Intent
 import com.vcyberpunk.weather.presentation.details.DetailsStore.Label
 import com.vcyberpunk.weather.presentation.details.DetailsStore.State
 
-internal interface DetailsStore : Store<Intent, State, Label> {
+interface DetailsStore : Store<Intent, State, Label> {
 
     sealed interface Intent {
     }
@@ -20,7 +20,7 @@ internal interface DetailsStore : Store<Intent, State, Label> {
     }
 }
 
-internal class DetailsStoreFactory(
+class DetailsStoreFactory(
     private val storeFactory: StoreFactory
 ) {
 
@@ -54,6 +54,6 @@ internal class DetailsStoreFactory(
     }
 
     private object ReducerImpl : Reducer<State, Msg> {
-        override fun State.reduce(message: Msg): State = State(Unit)
+        override fun State.reduce(msg: Msg): State = State(Unit)
     }
 }

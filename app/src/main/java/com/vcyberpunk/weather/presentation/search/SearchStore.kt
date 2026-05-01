@@ -9,7 +9,7 @@ import com.vcyberpunk.weather.presentation.search.SearchStore.Intent
 import com.vcyberpunk.weather.presentation.search.SearchStore.Label
 import com.vcyberpunk.weather.presentation.search.SearchStore.State
 
-internal interface SearchStore : Store<Intent, State, Label> {
+interface SearchStore : Store<Intent, State, Label> {
 
     sealed interface Intent {
     }
@@ -20,7 +20,7 @@ internal interface SearchStore : Store<Intent, State, Label> {
     }
 }
 
-internal class SearchStoreFactory(
+class SearchStoreFactory(
     private val storeFactory: StoreFactory
 ) {
 
@@ -53,6 +53,6 @@ internal class SearchStoreFactory(
     }
 
     private object ReducerImpl : Reducer<State, Msg> {
-        override fun State.reduce(message: Msg): State = State(Unit)
+        override fun State.reduce(msg: Msg): State = State(Unit)
     }
 }
