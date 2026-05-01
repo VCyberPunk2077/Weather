@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
@@ -19,8 +21,24 @@ android {
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        val apiKey = providers.gradleProperty("WEATHER_API_KEY")
+            .orElse(providers.provider {
+                val localProperties = Properties()
+                val localPropertiesFile = rootProject.file("local.properties")
+                if (localPropertiesFile.exists()) {
+                    localPropertiesFile.inputStream().use {
+                        localProperties.load(it)
+                    }
+                }
+                localProperties.getProperty("WEATHER_API_KEY") ?: error("You're should add apikey into local.properties")
+            })
+        buildConfigField(
+            "String",
+            "WEATHER_API_KEY",
+            apiKey.get()
+        )
     }
 
     buildTypes {
@@ -38,6 +56,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
