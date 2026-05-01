@@ -1,6 +1,7 @@
 package com.vcyberpunk.weather.domain.entity
 
-import java.util.Calendar
+import android.icu.util.Calendar
+
 
 data class Weather(
     val tempC: Float,
