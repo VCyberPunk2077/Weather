@@ -1,7 +1,6 @@
 package com.vcyberpunk.weather.di
 
 import android.content.Context
-import com.vcyberpunk.weather.data.local.db.ApplicationScope
 import com.vcyberpunk.weather.data.local.db.FavouriteCitiesDao
 import com.vcyberpunk.weather.data.local.db.FavouriteDatabase
 import com.vcyberpunk.weather.data.network.api.ApiFactory
