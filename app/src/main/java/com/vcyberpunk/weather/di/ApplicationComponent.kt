@@ -1,6 +1,7 @@
 package com.vcyberpunk.weather.di
 
 import android.content.Context
+import com.vcyberpunk.weather.presentation.MainActivity
 import dagger.BindsInstance
 import dagger.Component
 
@@ -10,6 +11,8 @@ import dagger.Component
     PresentationModule::class
 ])
 interface ApplicationComponent {
+
+    fun inject(activity: MainActivity)
 
     @Component.Factory
     interface Factory {
