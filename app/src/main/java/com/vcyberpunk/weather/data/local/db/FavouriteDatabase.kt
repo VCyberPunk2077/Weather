@@ -24,7 +24,7 @@ abstract class FavouriteDatabase : RoomDatabase() {
                 val database = Room.databaseBuilder(
                     context = context,
                     klass = FavouriteDatabase::class.java,
-                    name = ""
+                    name = DB_NAME
                 ).build()
                 return database.apply {
                     INSTANCE = this
