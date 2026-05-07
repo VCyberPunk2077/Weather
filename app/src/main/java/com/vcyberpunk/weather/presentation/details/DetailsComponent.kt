@@ -1,3 +1,7 @@
 package com.vcyberpunk.weather.presentation.details
 
-interface DetailsComponent
+interface DetailsComponent {
+
+
+
+}
