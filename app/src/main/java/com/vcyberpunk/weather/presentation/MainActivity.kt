@@ -19,8 +19,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         (applicationContext as WeatherApp).applicationComponent.inject(this)
+        val component = rootComponentFactory.create(defaultComponentContext())
         setContent {
-            RootContent(component = rootComponentFactory.create(defaultComponentContext()))
+            RootContent(component = component)
         }
     }
 }
