@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Weather</string>
+    <string name="weather_icon_content_description">Weather icon</string>
+    <string name="icon_add_to_favourite_content_description">Icon add to favourite</string>
+    <string name="button_add_favourite">Add to favourite</string>
+    <string name="search_icon_content_description">Search icon</string>
+    <string name="button_search">Search</string>
 </resources>
