@@ -5,4 +5,8 @@
     <string name="button_add_favourite">Add to favourite</string>
     <string name="search_icon_content_description">Search icon</string>
     <string name="button_search">Search</string>
+    <string name="back_button_content_description">Back button</string>
+    <string name="add_to_favourite_button_content_description">Add to favourite button</string>
+    <string name="condition_icon_content_description">Condition icon</string>
+    <string name="upcoming">Upcoming</string>
 </resources>
