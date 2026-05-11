@@ -9,4 +9,8 @@
     <string name="add_to_favourite_button_content_description">Add to favourite button</string>
     <string name="condition_icon_content_description">Condition icon</string>
     <string name="upcoming">Upcoming</string>
+    <string name="search_placeholder">Search</string>
+    <string name="icon_go_back_content_description">Icon go back</string>
+    <string name="empty_result_text">Nothing found matching your request</string>
+    <string name="error_search_result_text">Something went wrong</string>
 </resources>
