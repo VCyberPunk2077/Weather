@@ -11,7 +11,7 @@ class WeatherRepositoryImpl @Inject constructor(
     private val apiService: ApiService
 ) : WeatherRepository {
     override suspend fun getWeather(cityId: Int): Weather {
-        return apiService.loadCurrentWeather("$PREFIX_CITY_ID$cityId").toEntity()
+        return apiService.loadCurrentWeather("$PREFIX_CITY_ID$cityId").current.toEntity()
     }
 
     override suspend fun getForecast(cityId: Int): Forecast {
