@@ -159,7 +159,7 @@ class DetailsStoreFactory @Inject constructor(
             return when (msg) {
                 is Msg.FavouriteStatusChange -> {
                     copy(
-                        isFavourite = !isFavourite
+                        isFavourite = msg.isFavourite
                     )
                 }
                 is Msg.ForecastLoaded -> {
