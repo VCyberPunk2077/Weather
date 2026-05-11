@@ -62,12 +62,12 @@ class DefaultRootComponent @AssistedInject constructor(
                     },
                     onSearchClicked = {
                         navigation.push(
-                            configuration = Config.Search(openReason = OpenReason.AddToFavourite)
+                            configuration = Config.Search(openReason = OpenReason.RegularSearch)
                         )
                     },
                     onAddToFavouriteClicked = {
                         navigation.push(
-                            configuration = Config.Search(openReason = OpenReason.RegularSearch)
+                            configuration = Config.Search(openReason = OpenReason.AddToFavourite)
                         )
                     }
                 )
