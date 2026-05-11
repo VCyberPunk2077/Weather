@@ -204,7 +204,7 @@ private fun UpcomingWeather(upcoming: List<Weather>) {
             .padding(24.dp),
         shape = MaterialTheme.shapes.extraLarge,
         colors = CardDefaults.cardColors(
-            contentColor = MaterialTheme.colorScheme.background.copy(
+            containerColor = MaterialTheme.colorScheme.background.copy(
                 alpha = 0.24f
             )
         )
