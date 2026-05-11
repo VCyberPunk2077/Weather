@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="weather_icon_content_description">Иконка с погодой</string>
+    <string name="icon_add_to_favourite_content_description">Иконка добавить город в избранное</string>
+    <string name="button_add_favourite">Добавить в избранное</string>
+    <string name="search_icon_content_description">Иконка поиска</string>
+    <string name="button_search">Поиск</string>
+    <string name="back_button_content_description">Иконка назад</string>
+    <string name="add_to_favourite_button_content_description">Иконка добавить город в избранное</string>
+    <string name="condition_icon_content_description">Иконка с погодными условиями</string>
+    <string name="upcoming">Прогноз</string>
+    <string name="search_placeholder">Поиск</string>
+    <string name="icon_go_back_content_description">Иконка назад</string>
+    <string name="empty_result_text">По вашему запросу ничего не найдено</string>
+    <string name="error_search_result_text">Что-то пошло не так</string>
+</resources>
