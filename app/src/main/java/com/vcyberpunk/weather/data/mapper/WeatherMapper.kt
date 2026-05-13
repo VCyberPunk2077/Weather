@@ -10,7 +10,6 @@ import java.util.Date
 private const val MILLIS_IN_SECOND = 1000
 private const val DEFAULT_ICON_RESOLUTION = "64x64"
 private const val NEW_ICON_RESOLUTION = "128x128"
-private const val VALUE_TO_DROP_FIRST_DAY = 1
 
 fun WeatherDto.toEntity(): Weather = Weather(
     tempC = tempC,
@@ -21,7 +20,7 @@ fun WeatherDto.toEntity(): Weather = Weather(
 
 fun WeatherForecastDto.toEntity(): Forecast = Forecast(
     currentWeather = current.toEntity(),
-    upcoming = forecast.forecast.drop(VALUE_TO_DROP_FIRST_DAY).map { dayDto ->
+    upcoming = forecast.forecast.map { dayDto ->
         val dayWeather = dayDto.dayWeather
         Weather(
             tempC = dayWeather.tempC,
